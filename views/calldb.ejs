@@ -15,7 +15,7 @@
                 <% if (data) { %>
                     <% for (var i = 0; i < data.length; i++) { %>
                         <tr>
-                            <td><%= (i + 1) %></td>
+                            <td><%= data[i].id %></td>
                             <td><%= data[i].prcall %></td>
                             <td><%= data[i].name %></td>
                             <td><%= data[i].locator %></td>
