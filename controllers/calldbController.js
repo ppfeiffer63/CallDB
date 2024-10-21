@@ -10,7 +10,7 @@ controller.list = (req, res) => {
             }
 
             res.render('calldb', {
-                data: calls
+                data: calls,  title: 'CallDatabase' 
             });
         });
     });
