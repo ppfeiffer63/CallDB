@@ -9,7 +9,7 @@ controller.list = (req, res) => {
                 res.json(err);
             }
 
-            res.render('customers', {
+            res.render('calldb', {
                 data: customers
             });
         });
