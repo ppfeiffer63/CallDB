@@ -13,7 +13,7 @@ const PASS = process.env.DATABASE_PASSWORD;
 const customerRoutes = require('./routes/customer');
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8001);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -21,8 +21,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
     host: 'localhost',
-    user: 'admin',
-    password: 'admin',
+    user: 'calldb',
+    password: 'calldb',
     port: '3306',
     database: 'calldb'
 }, 'single'));
@@ -36,5 +36,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Starting the server
 app.listen(app.get('port'), () => {
-    console.log('Server on port 3000');
+    console.log('Server on port 8001');
 })
