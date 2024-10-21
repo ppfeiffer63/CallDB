@@ -1,10 +1,10 @@
 {
-  "name": "crud-nodejs-myslq",
+  "name": "call-database",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "app.js"
   },
   "keywords": [],
   "author": "",
