@@ -11,6 +11,7 @@ const PASS = process.env.DATABASE_PASSWORD;
 
 // Importing routes
 const customerRoutes = require('./routes/customer');
+const callsRoutes = require('./routes/calls');
 
 // settings
 app.set('port', process.env.PORT || 8001);
@@ -29,7 +30,8 @@ app.use(myConnection(mysql, {
 app.use(express.urlencoded({extended: false}));
 
 // Routes
-app.use('/', customerRoutes);
+app.use('/customer/', customerRoutes);
+app.use('/calls/', callsRoutes);
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
