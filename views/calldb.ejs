@@ -2,13 +2,15 @@
 
 <div class="row mt-5">
     <div class="col-md-7">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table-hover table-sm">
             <thead>
                 <tr>
                     <th>#</th>
                     <th>Call</th>
                     <th>Name</th>
+                    <th>QTH</th>
                     <th>Locator</th>
+                    <th>MyBBS</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,7 +20,9 @@
                             <td><%= data[i].id %></td>
                             <td><%= data[i].prcall %></td>
                             <td><%= data[i].name %></td>
+                            <td><%= data[i].qth %></td>
                             <td><%= data[i].locator %></td>
+                            <td><%= data[i].mybbs %></td>
                         </tr>
                     <% } %>
                 <% } %>
